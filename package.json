@@ -1,0 +1,29 @@
+{
+  "name": "kvue",
+  "version": "0.1.0",
+  "description": "The Kvue module consists command line tools to help create K-Views for Kennect Process Apps",
+  "main": "lib.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inkennect/kv.git"
+  },
+  "keywords": [
+    "kvue",
+    "kview",
+    "views",
+    "for",
+    "kennect",
+    "Kennect",
+    "Process",
+    "Apps"
+  ],
+  "author": "kennect.in, Mumbai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/inkennect/kv/issues"
+  },
+  "homepage": "https://github.com/inkennect/kv#readme"
+}
