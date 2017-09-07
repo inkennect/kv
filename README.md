@@ -5,7 +5,7 @@ The Kvue module consists command line tools to help create K-Views for Kennect P
 
 ## commands
 
-(create a folder named 'yourWorkSpace')
+(create a folder named 'yourWorkSpace' and get it registered with KBET by cd 'yourWorkSpace' and these commands below)
 
 1. ``kv auth``: to authenticate yourself
 2. ``kv init`` : to create a new app
