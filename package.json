@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/inkennect/kv.git"
   },
+  "bin": {
+    "kv": "lib/generate.js"
+  },
+  "preferGlobal": "true",
   "keywords": [
     "kvue",
     "kview",
@@ -25,5 +29,9 @@
   "bugs": {
     "url": "https://github.com/inkennect/kv/issues"
   },
-  "homepage": "https://github.com/inkennect/kv#readme"
+  "homepage": "https://github.com/inkennect/kv#readme",
+  "dependencies": {
+    "highland": "^2.11.1",
+    "request": "^2.81.0"
+  }
 }
