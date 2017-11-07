@@ -1,12 +1,11 @@
 let kv = require('./lib/generate');
-function testProcessCreation(e) {
-    console.log('testing ProcessCreation: ');
-    //kv.create.process('1.0');
-    kv.create.process(e||'_testProcess_'+new Date().getTime());
+function testActivityCreation(e) {
+    console.log('testing ActivityCreation: ');
+    //kv.create.activity('1.0');
+    kv.create.activity(e||'_testActivity_'+new Date().getTime());
 }
 function testAppCreation() {
-    console.log('testing ProcessCreation: ');
-    //kv.create.process('1.0');
+    console.log('testing ActivityCreation: ');
     kv.create.app('_testApp_'+new Date().getTime());
 }
 function testkvAuth(){
@@ -27,8 +26,8 @@ function testKvModelAdd(){
 }
 
 
-//testProcessCreation(2.2)
-//testAppCreation()
+//testActivityCreation(2.2)
+testAppCreation()
 //testkvAuth()
 //testkvRegister();
 //testkvPush()

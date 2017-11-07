@@ -11,7 +11,7 @@
         "sample":{
             "name":"sample",
             "type":"direct",
-            "value":"hello from process __procid__"
+            "value":"hello from activity __procid__"
         }
     }
 }

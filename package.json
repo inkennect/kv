@@ -1,7 +1,7 @@
 {
   "name": "kvue",
   "version": "0.1.0",
-  "description": "The Kvue module consists command line tools to help create K-Views for Kennect Process Apps",
+  "description": "The Kvue module consists command line tools to help create K-Views for Kennect Business Execution Tool: Process Automation Apps",
   "main": "lib.js",
   "scripts": {
     "test": "node test.js"
@@ -22,6 +22,8 @@
     "kennect",
     "Kennect",
     "Process",
+    "Automation",
+    "Serverless",
     "Apps"
   ],
   "author": "kennect.in, Mumbai",
