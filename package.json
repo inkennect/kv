@@ -1,39 +1,42 @@
 {
-  "name": "kvue",
-  "version": "0.1.0",
-  "description": "The Kvue module consists command line tools to help create K-Views for Kennect Business Execution Tool: Process Automation Apps",
-  "main": "lib.js",
-  "scripts": {
-    "test": "node test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/inkennect/kv.git"
-  },
-  "bin": {
-    "kv": "lib/generate.js"
-  },
-  "preferGlobal": "true",
-  "keywords": [
-    "kvue",
-    "kview",
-    "views",
-    "for",
-    "kennect",
-    "Kennect",
-    "Process",
-    "Automation",
-    "Serverless",
-    "Apps"
-  ],
-  "author": "kennect.in, Mumbai",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/inkennect/kv/issues"
-  },
-  "homepage": "https://github.com/inkennect/kv#readme",
-  "dependencies": {
-    "highland": "^2.11.1",
-    "request": "^2.81.0"
-  }
+    "name": "kvue",
+    "version": "0.1.0",
+    "description": "The Kvue module consists command line tools to help create K-Views for Kennect Business Execution Tool: Process Automation Apps",
+    "main": "lib.js",
+    "scripts": {
+        "test": "node test.js",
+        "r": "npm uninstall -g && npm i -g"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/inkennect/kv.git"
+    },
+    "bin": {
+        "kc": "lib2/generate.js"
+    },
+    "kv": "lib/generate.js",
+    "preferGlobal": "true",
+    "keywords": [
+        "kvue",
+        "kview",
+        "views",
+        "for",
+        "kennect",
+        "Kennect",
+        "Process",
+        "Automation",
+        "Serverless",
+        "Apps"
+    ],
+    "author": "kennect.in, Mumbai",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/inkennect/kv/issues"
+    },
+    "homepage": "https://github.com/inkennect/kv#readme",
+    "dependencies": {
+        "colors": "^1.1.2",
+        "highland": "^2.11.1",
+        "request": "^2.81.0"
+    }
 }
