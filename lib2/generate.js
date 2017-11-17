@@ -26,7 +26,7 @@ kv = {
             if (appDir) {
                 path = path + '/' + appDir;
             }
-            let dirname = path + '/P' + name;
+            let dirname = path + '/P-' + name;
             let fromDir = __dirname + (isBasicTemplate ? '/looks/P-basic/' : '/looks/P-blank/');
             //var dirname = path.dirname(path);
             if (!fs.existsSync(dirname)) {
@@ -180,6 +180,7 @@ if (process.argv.length == 5) {
     let command = process.argv[2];
     if (command == 'add') {
         let name = process.argv[4].toString();
+        let thing = process.argv[3];
         kv.add[thing](name);
     }
 } else if (process.argv.length == 4) {

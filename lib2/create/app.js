@@ -47,23 +47,23 @@ module.exports = function () {
         rl.close();
         kbet.createAppInRemote(appPackageManifest, (response) => {
 
-            console.log('-------------\n\n Created app: ', appPackageManifest);
+            console.log('-------------\n\n Created app in Kbet: ', appPackageManifest);
 
             process.chdir('./Apps');
-
-            fs.mkdirSync(appPackageManifest.name);
+            let appDirName = appPackageManifest.name + '-' + appPackageManifest.pref;
+            fs.mkdirSync(appDirName);
             const isBasicTemplate = appPackageManifest.isBasicTemplate;
             delete appPackageManifest.isBasicTemplate;
             appPackageManifest.id = response._id;
             appPackageManifest.type = "application";
-            fs.writeFileSync("./" + appPackageManifest.name + "/manifest.json", JSON.stringify(appPackageManifest, null, 4), 'utf8');
+            fs.writeFileSync("./" + appDirName + "/manifest.json", JSON.stringify(appPackageManifest, null, 4), 'utf8');
 
-            kv.add.activity(appPackageManifest.entry, appPackageManifest.name, isBasicTemplate != '2');
+            kv.add.activity(appPackageManifest.entry, appDirName, isBasicTemplate != '2');
 
-            fs.mkdirSync(appPackageManifest.name + '/Application');
-            let fromDir = __dirname + (isBasicTemplate == '2' ? '/looks/A-blank/' : '/looks/A-basic/');
+            fs.mkdirSync(appDirName + '/Application');
+            let fromDir = __dirname + "/.." + (isBasicTemplate == '2' ? '/looks/A-blank/' : '/looks/A-basic/');
             let moduleFile = fs.readFileSync(fromDir + '/module.k.js', 'utf8');
-            fs.writeFileSync(appPackageManifest.name + '/Application/module.k.js', moduleFile, 'utf8');
+            fs.writeFileSync(appDirName + '/Application/module.k.js', moduleFile, 'utf8');
 
             console.log('Created successfully');
 
